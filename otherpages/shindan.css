@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP');
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: #f6f5ed;
+}
+/*共通(トップメニュー)*/
+.toptitle {
+  font-size: 20px;
+  background-color: #503f2f;
+  padding: 15px;
+  margin: 1px 1px;
+  font-family: 'Noto Serif JP', sans-serif;
+}
+.toptitle a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.hr1 {
+  height: 3px;
+  background: linear-gradient(to right, #ffeed7, #8d714c, #ffeed7);
+  border: none;
+}
+/*サブタイトル指定*/
+.ramen-icon {
+  text-align: center;
+}
+.ramen-icon img{
+  text-align: center;
+  height: 80px;
+  width: 80px;
+}
+.subtitle {
+  font-size: 23px;
+  text-align: center;
+  color: #503f2f;
+  margin: 5px 0 0 0;
+  font-family:"Sawarabi Mincho",游明朝;
+  letter-spacing: 5px;
+}
+
+/*診断の設定ここから*/
+.flex-box {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.question, .resultresult {
+  color: #503f2f;
+}
+.question {
+  font-size: 20px;
+  text-align: center;
+}
+.options {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+.options button {
+  flex: 1;
+  padding: 15px 20px;
+  font-size: 16px;
+  background-color: #ffffff;
+  border: 2px solid #503f2f;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.1s;
+}
+.options button:hover {
+  background-color: #b0e3d1;
+}
+.options button:active {
+  transform: scale(0.95);
+}
+#question-image {
+  margin: 20px 0;
+  text-align: center;
+}
+#question-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+
+/*結果設定*/
+.hidden {
+  display: none;
+}
+.resultresult {
+  font-size: clamp(18px, 2.5vw, 25px);
+}
+.result-description {
+  font-size: clamp(12px, 2.5vw, 15px);
+  margin: 0 0 30px 0;
+}
+/*ラーメンボックスの設定*/
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid #503f2f;
+  background: #ffffff;
+}
+.flex .image {
+  width: 100%;
+  max-width: 250px;
+  flex-shrink: 0;
+}
+.flex .image img {
+  width: 100%;
+  height: auto;
+  margin: 10px 10px 0 10px;
+  border: 1.5px solid #503f2f;
+}
+.flex .image p {
+  text-align: center;
+  margin: 0 0 10px 20px;
+  font-size: 13px;
+  color: #5f5f5f;
+}
+.flex .right {
+  margin: 0 0 0 20px;
+  padding: 0;
+  flex: 1;
+}
+.flex .title {
+  margin: 20px 0 0 0;
+  padding: 0;
+  font-weight: bold;
+  font-size: clamp(16px, 2.5vw, 21px);
+  color: #503f2f;
+}
+.flex .text {
+  margin: 15px 10px 0 10px;
+  padding: 0;
+  font-size: clamp(12px, 1.5vw, 16px);
+}
+.flex .information {
+  margin: 20px 10px 10px 10px;
+  padding: 10px;
+  font-size: clamp(11px, 1.5vw, 15px);
+  background: #edf3f8;
+  width: fit-content;
+  border-left: 8px solid #488ec4;
+}
+.flex .information a:hover {
+  opacity: 0.5;
+}
+
+@media (max-width: 992px) {
+  .bottom-menu,.flex,.question,.result-title,.result-description {
+    font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  }
+  .flex {
+    flex-direction:column;
+	align-items: center;
+  }
+  .flex .image img {
+	margin: 10px 10px 0 0;
+  }
+  .options button {
+	color: #503f2f;
+  }
+}
+
+
+
+/*--リスタートボタン*/
+.start-button {
+  text-align: center;
+  margin-top: 30px;
+}
+.start-button button {
+  background-color: #503f2f;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: 1.5px solid #503f2f;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.start-button button:hover {
+  background-color: #ffffff;
+  color: #503f2f;
+}
+/*スマホ対応、選択肢が一列になる*/
+@media (max-width: 992px) {
+  .options {
+    flex-direction: column;
+  }
+  .flex {
+    flex-direction: column; /*写真と説明を縦にする*/
+  }
+  .flex .image {
+    width: 170px;
+	margin: 0 auto;
+	margin-top: 15px;
+  }
+  .flex .image p {
+    font-size: 10px;
+  }
+  .flex .title {
+	margin-top: 0;
+  }
+  .flex .right {
+    margin-left: 0;
+  }
+}
+  
+
+
+
+
+
+
+/*共通(ボトムメニュー)*/
+.bottom-menu {
+  display: flex;
+  justify-content: center;
+  background: #503f2f;
+}
+.bottom-menu-contents {
+  margin: 20px 50px 5px 50px;
+  padding: 20px 0 10px 0;
+}
+.bottom-menu-contents p {
+  color: #f6f5ed;
+  font-size: clamp(14px,1.5vw,15px);
+}
+.bottom-menu-contents a {
+  color: #f6f5ed;
+  text-decoration: none;
+}
+.bottom-menu-contents a:hover {
+  opacity: 0.5;
+}
+@media screen and (max-width: 992px) { /*スマホの場合はタテ並びにする*/
+  .bottom-menu {
+    display: block;
+  }
+}

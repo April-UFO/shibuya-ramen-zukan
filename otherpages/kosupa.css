@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP');
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: #f6f5ed;
+}
+/*共通(トップメニュー)*/
+.toptitle {
+  font-size: 20px;
+  background-color: #503f2f;
+  padding: 15px;
+  margin: 1px 1px;
+  font-family: 'Noto Serif JP', sans-serif;
+}
+.toptitle a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.hr1 {
+  height: 3px;
+  background: linear-gradient(to right, #ffeed7, #8d714c, #ffeed7);
+  border: none;
+}
+/*サブタイトル指定*/
+.ramen-icon {
+  text-align: center;
+}
+.ramen-icon img{
+  text-align: center;
+  height: 80px;
+  width: 80px;
+}
+.subtitle {
+  font-size: 23px;
+  text-align: center;
+  color: #503f2f;
+  margin: 5px 0 0 0;
+  font-family:"Sawarabi Mincho",游明朝;
+  letter-spacing: 5px;
+}
+/*注文したいメニューを押してね*/
+.menu-sentaku  {
+  text-align: center;
+  font-size: 14px;
+}
+/*券売機設定*/
+.vending-machine {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  margin: 30px auto;
+  padding: 60px 50px;
+  background-color: #bdbdbd;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0 4px #8e8e8e;
+}
+.button {
+  width: 170px;
+  height: 80px;
+  margin: 10px;
+  background: linear-gradient(to bottom, #e34622 50%, #ffffff 50%);
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0 4px #8e8e8e;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+.button:active {
+  transform: translateY(4px);
+  box-shadow: 0 1px #333;
+}
+.button:hover {
+  filter: brightness(150%);
+}
+.button span.upper {
+  color: white;
+  font-size: 18px;
+}
+.button span.lower {
+  color: black;
+  font-size: 16px;
+  line-height: 40px;
+}
+.coin-slot {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 100px;
+  height: 40px;
+  background: linear-gradient(#343333, #121212);
+  border: 2px solid #666363;
+  border-radius: 6px;
+  box-shadow: inset 0 2px 4px rgba(255,255,255,0.2);
+}
+.coin-slot::after {   
+  content: '';
+  position: absolute;
+  top: 12px;
+  left: 20px;
+  width: 60px;
+  height: 4px;
+  background: #666363;
+  border-radius: 2px;
+}
+.hakken {
+  text-align: center;
+  margin: 60px;
+  color: #503f2f;
+}
+/*ラーメンカードの設定*/
+.ramen-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+.ramen-card {
+  position: relative;
+  flex: 0 0 calc(33.333% - 20px); /*3列分*/
+  max-width: calc(33.333% - 20px);
+  box-sizing: border-box;
+  background-color: #ffffff;
+  padding: 15px 10px 10px 10px;
+  box-shadow: 0 6px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  border: 2px dotted black;
+}
+.ramen-card::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 55%;
+  transform: translateX(-50%);
+  width: 26px;
+  height: 26px;
+  background: url('./icon/pin.png') no-repeat center/contain;
+  z-index: 10;
+}
+.ramen-flavor {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background-color: #503f2f;
+  color: white;
+  padding: 2px 6px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 4px;
+}
+.ramen-card img {
+  width: 40%;
+  height: auto;
+  margin-top: 20px;
+  border: 2px solid #503f2f;
+}
+.ramen-menu {
+  font-size: 13px;
+  color: #7e7e7e;
+  margin: 2px 0 8px 0;
+}
+.ramen-name {
+  font-size: 20px;
+  color: #b22222;
+  margin: 5px 0;
+  font-weight: bold;
+}
+.ramen-price {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 5px 0 10px 0;
+  color: #20842d;
+}
+.ramen-location,
+.ramen-date {
+  font-size: 12px;
+  margin: 2px 0 0 0;
+  text-align: right;
+}
+/*スマホだと1列に*/
+@media (max-width: 992px) {
+  .ramen-card {
+    flex: 1 1 100%;
+    max-width: none;
+  }
+}
+
+
+@media (max-width: 992px) {
+  .bottom-menu,.hakken,.ramen-card {
+    font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  }
+  .hakken {
+	font-size: 18px;
+  }
+}
+
+
+/*共通(ボトムメニュー)*/
+.bottom-menu {
+  display: flex;
+  justify-content: center;
+  background: #503f2f;
+}
+.bottom-menu-contents {
+  margin: 20px 50px 5px 50px;
+  padding: 20px 0 10px 0;
+}
+.bottom-menu-contents p {
+  color: #f6f5ed;
+  font-size: clamp(14px,1.5vw,15px);
+}
+.bottom-menu-contents a {
+  color: #f6f5ed;
+  text-decoration: none;
+}
+.bottom-menu-contents a:hover {
+  opacity: 0.5;
+}
+@media screen and (max-width: 992px) { /*スマホの場合はタテ並びにする*/
+  .bottom-menu {
+    display: block;
+  }
+}

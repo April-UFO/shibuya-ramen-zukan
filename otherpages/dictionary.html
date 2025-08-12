@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>渋谷ラーメン大図鑑</title>
+	<!-- CSS -->
+	<link rel="stylesheet" href="./shoyupage.css">
+	<!-- フォント設定 -->
+	<link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho" rel="stylesheet">
+  </head>
+  <body> 
+    <!--共通(トップメニュー)-->
+    <h1 class = "toptitle"><a href = "../index.html">渋谷ラーメン大図鑑</a></h1>
+    <hr class = "hr1">
+	<br>
+	<div class = "ramen-icon">
+	  <img src = "./icon/jisho-icon.png">
+	</div>
+    <h2 class = "subtitle">用語解説</h2>
+	<br>
+	<br>
+	<div class = "sbox"> 
+      <div class = "sbox-inner"> 
+        <input type="text" id="searchbox" placeholder="検索キーワードを入力">
+        <button id="searchbutton">検索</button>
+      </div>
+    </div>
+	<br>
+	<br>
+	<h4>あつもり/熱盛</h4>
+	<p class = "dictionary-title">つけ麺の麺が、冷やされずに温かい状態で提供されること。
+	スープが冷めにくいため、アツアツで食べたい人にオススメ。対義語は「ひやもり」
+	</p>
+	<br>
+	<hr class = "zukan-line">
+	<br>
+	<h4>家系</h4>
+	<p class = "dictionary-title">
+	醤油豚骨味のこってりスープが特徴のラーメン。
+	神奈川県横浜市にある「吉村家」が発症であり、「～家」という店名が多いことから「家系」と呼ばれている。
+	トッピングは、ほうれん草、海苔、チャーシュー、うずらの卵が一般的。
+	また、「麵の硬さ」「味の濃さ」「脂の量」を自分好みにオーダーできる。例）「かため・こいめ・多め」
+	</p>
+	<br>
+	<hr class = "zukan-line">
+	<br>
+	<h4>カエシ</h4>
+	<p class = "dictionary-title">
+	ラーメンのスープに加える調味タレのこと。
+	しょうゆダレなら醤油ラーメン、みそダレならみそラーメンと、ラーメンの味を決めるもとになる。
+	「カエシ」に豚骨や鶏ガラ、魚介といった「だし」を加えることで、ラーメンのスープとなる。
+	</p>
+	<br>
+	<hr class = "zukan-line">
+	<br>
+	<h4>替え玉</h4>
+	<p class = "dictionary-title">
+	ラーメンを食べている途中に、麺だけを追加注文すること。豚骨ラーメンで一般的。
+	</p>
+	<br>
+	<hr class = "zukan-line">
+	<br>
+	<h4>完まく</h4>
+	<p class = "dictionary-title">
+	ラーメンのスープをすべて飲み干すこと。
+	「完」とは「完食」のことで、「まく」とは「まくる」＝「すべてやりきる」という造語の略称である。
+	お店によっては、「完まく」によってスタンプやカードを貰うことができ、それを集めることでプレゼントが用意されている場合もある。
+	</p>
+	<br>
+	<hr class = "zukan-line">
+	<br>
+	<h4>粉落とし</h4>
+	<p class = "dictionary-title">
+	麺の硬さを表す言葉で、「超短時間だけ茹でるため粉っぽさが残る」ほど硬い麺のこと。
+	「博多ラーメン」など豚骨ラーメンで使われることが多い。
+	「粉おとし」より一段階硬さを落とした「バリカタ」も、麺の硬さを表す言葉として頻繁に使われる。
+	</p>
+	<br>
+	<hr class = "zukan-line">
+	<br>
+	<h4>二郎系</h4>
+	<p class = "dictionary-title">
+	極太のもちもち麺の上に、てんこ盛りの野菜が特徴のラーメン。
+	非常にボリュームがあり、「小」でも一般的な一人前の2倍以上にあたる量。
+	</p>
+	<p class = "dictionary-sup">
+	・コール
+	<br>店員から「ニンニク入れますか？」と聞かれたときに、トッピングとその量を口頭で伝える行為。
+	</p>
+	<p class = "dictionary-sup">
+	・ヤサイ
+	<br>もやしとキャベツのこと。
+	</p>
+	<p class = "dictionary-sup">
+	・カラメ
+	<br>味が濃いめであること。
+	</p>
+	<p class = "dictionary-sup">
+	・アブラ
+	<br>背油のこと。
+	</p>
+	<p class = "dictionary-sup">
+	・マシ
+	<br>通常より量が多めであること。「マシマシ」だとさらに量が多くなる。
+	「マシ」とコールしなければ通常の量、「ヌキ」とコールすればトッピングなしとなる。
+	</p>
+	<p class = "dictionary-title">
+    例）「ニンニクヌキ、ヤサイマシ、アブラ、カラメ」
+	</p>
+	<br>
+	<hr class = "zukan-line">
+	<br>
+	<h4>背油ちゃっちゃ系</h4>
+	<p class = "dictionary-title">
+	豚の背油を大量にスープに浮かべたラーメンのこと。
+	ラーメンに背油をかける動作から、「ちゃっちゃ」と言われている。
+	</p>
+	<br>
+	<hr class = "zukan-line">
+	<br>
+	<h4>台湾まぜそば</h4>
+	<p class = "dictionary-title">
+	名古屋発祥のまぜそばで、ピリ辛の肉みそが特徴。
+	トッピングはニンニク、ニラ、魚粉、卵黄が一般的。通常のまぜそばと同様に、
+	途中で酢やラー油で味変をし、最後に残ったタレを白ごはんで食べるのが定番。
+	</p>
+	<br>
+	<hr class = "zukan-line">
+	<br>
+	<h4>ちゃん系</h4>
+	<p class = "dictionary-title">
+	昔ながらの醬油ベースの中華そば。「～ちゃん」という店名が多いことから「ちゃん系」と呼ばれている。
+	スープが丼から溢れるほど盛られるため、丼の下に受け皿があることが多い。
+	また、チャーシューにこだわりがあり、注文してからカットをするため、肉の旨みを楽しむことができる。
+	</p>
+	<br>
+	<hr class = "zukan-line">
+	<br>
+	<h4>天地返し</h4>
+	<p class = "dictionary-title">
+	ラーメンを食べる前に、上下をひっくり返すようにすべて混ぜること。
+	主に「二郎系」ラーメンやまぜそばで使われる。
+	トッピングが多いラーメンで麺をいち早く食べることや、全体に味をなじませることを目的とする。
+	</p>
+	<br>
+	<hr class = "zukan-line">
+	<br>
+	<h4>白湯(ぱいたん)ラーメン</h4>
+	<p class = "dictionary-title">
+	豚骨や鶏ガラなどの骨を長時間煮込んで作る、白く濁ったこってりスープのラーメン。
+	麺は細麺が多く、非常に旨みが強いことが特徴。
+	</p>
+	<br>
+	<hr class = "zukan-line">
+	<br>
+	<h4>マー油/麻油</h4>
+	<p class = "dictionary-title">
+	にんにくを黒くなるまで焦がして作る油のこと。
+	香ばしさとほろ苦さが特徴で、スープに入れることで味に深みとパンチが出る。
+	豚骨ラーメンに使用されることが多い。
+	</p>
+	<br>
+	<hr class = "zukan-line">
+	<br>
+	<h4>ラー博</h4>
+	<p class = "dictionary-title">
+	「新横浜ラーメン博物館」の略称で、ラーメンをテーマにしたフードパークのこと。
+	昭和の街並みを再現したエリアには、全国の有名ラーメン店が並び、ご当地ラーメンの食べ比べができる。
+	</p>
+	<br>
+	<hr class = "zukan-line">
+	<br>
+	<h4>割スープ</h4>
+	<p class = "dictionary-title">
+	つけ麺の食べ終わりに、つけ汁を薄めて飲みやすくするためのスープ。
+	鶏ガラスープや魚介スープなどあっさりした味が多い。
+	</p>
+	<br>
+	<!--検索のjs-->
+	<script>
+      function runSearch() {
+        const input = document.getElementById('searchbox').value.toLowerCase();
+        if (!input) return;
+        const elements = document.querySelectorAll('h4'); //検索の対象
+        let found = false;
+        elements.forEach(element => {
+          const highlights = element.querySelectorAll('span.search-highlight');
+          highlights.forEach(span => {
+            const text = span.textContent;
+             span.replaceWith(document.createTextNode(text));
+          });
+        const text = element.textContent.toLowerCase();
+        const index = text.indexOf(input);
+        if (index >= 0 && !found) {
+          found = true;
+          element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+        const regex = new RegExp(`(${input})`, 'gi');
+        element.innerHTML = element.innerHTML.replace(regex, '<span class="search-highlight" style="background-color: #ffe46f;">$1</span>');
+      });
+	}
+	document.getElementById('searchbutton').addEventListener('click', runSearch);
+    document.getElementById('searchbox').addEventListener('keydown', function (event) {　//エンターキーでも検索できるように
+      if (event.key === 'Enter') {
+        runSearch();
+      }
+    });
+    </script>
+	<!--共通(ボトムメニュー)-->
+	<br>
+	<br>
+    <div class = "bottom-menu">
+	  <div class = "bottom-menu-contents">
+	    <p>■エリアから選ぶ
+		<br>ー<a href = "./area-pages/senta-gaipage.html">渋谷センター街</a>
+		<br>ー<a href = "./area-pages/dougenzakapage.html">道玄坂</a>
+		<br>ー<a href = "./area-pages/sakuraokapage.html">南平台・桜岡</a>
+		<br>ー<a href = "./area-pages/aoyamapage.html">青山・美竹通り</a>
+		<br>ー<a href = "./area-pages/omotesandopage.html">表参道</a></p>
+	  </div>
+	  <div class = "bottom-menu-contents">
+	    <p>■味から選ぶ
+		<br>ー<a href = "./shoyupage.html">醤油</a>
+		<br>ー<a href = "./misopage.html">味噌</a>
+		<br>ー<a href = "./tonkotsupage.html">豚骨</a>
+		<br>ー<a href = "./iepage.html">家系</a>
+		<br>ー<a href = "./shiopage.html">塩</a>
+		<br>ー<a href = "./tantanpage.html">担々麵</a>
+		<br>ー<a href = "./tsukemenpage.html">つけ麺</a>
+		<br>ー<a href = "./mazepage.html">油そば・混ぜそば</a>
+		</p>
+	  </div>
+	  <div class = "bottom-menu-contents">
+	    <p>■<a href = "./ranking.html">ラーメンランキング</a>
+		<br><br>■<a href = "./shindan.html">ラーメン診断</a>
+		<br><br>■<a href = "./kosupa.html">コスパ最強ラーメン特集</a>
+		<br><br>■<a href = "./writer.html">作成者Profile</a></p>
+	  </div>
+	</div>
+  </body>
+</html>
