@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP');
+html {
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden;
+}
+.toptitle {
+  font-size: 20px;
+  background-color: #503f2f;
+  color: #ffffff;
+  padding: 15px;
+  margin: 1px 1px;
+  font-family: 'Noto Serif JP', sans-serif;
+}
+.hr1 {
+  height: 3px;
+  background: linear-gradient(to right, #ffeed7, #8d714c, #ffeed7);
+  border: none;
+}
+.top-banner {
+  position: relative;
+}
+@media (max-width: 992px) {
+  .top-banner img {
+    height: 400px;
+	width: 800px;
+  }
+  .top-banner {
+	text-align: center;
+	justify-content: center;
+	overflow: hidden;
+  }
+}
+.top-photo {
+  width: 100%;
+}  
+.top-banner p {
+  position: absolute;
+  color: white;
+  font-size: clamp(12px, 2vw, 30px);
+  font-family: 游明朝;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  margin: 0;
+  padding: 0;
+}
+header {
+  z-index: 10;
+  height: 50px;
+  top: 690px;
+  background-color: #503f2f;
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+  box-shadow: 0px 0px 20px 0 px rgba(0,0,0,0.25);
+}
+.header-list {
+  overflow: hidden;
+  list-style: none;
+  margin: 0 auto;
+  z-index: 20;
+}
+.header-list-contents {
+  display: inline-block; /*横並びの指令*/
+  padding: 12px 50px 20px 10px;
+  font-family: 'Noto Serif JP', sans-serif;
+}
+.header-list-moji {
+  text-decoration: none;
+  color: #ffffff;
+}
+.header-list-moji:hover {
+  opacity: 0.5;
+  text-decoration: underline;
+}
+.tyumoku {
+  font-size: 20px;
+}
+@media (max-width: 992px) {
+  .tyumoku,.area,.f-container,.aji-item-contents,.dictionary,.bottom-menu {
+    font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  }
+}
+@media (max-width: 992px) {
+  .header-list-contents {
+    font-size: 13px;
+	padding: 12px 20px 20px 8px;
+  }
+  header {
+    height: 45px;
+  }
+}
+/*カルーセルの設定*/
+/*画像サイズ*/
+.key_visual {
+  width: 600px;
+  max-width: 100%;
+}
+.slider-card-img {
+  width: 600px;
+  margin: 0 auto;
+}
+.slick-prev, .slick-next {
+  display: none !important;
+}
+@media (max-width: 992px) {
+  .key_visual, .slider {
+    width: 100%;
+  }
+  .slider-card-img {
+	width: 100%;
+  }
+}
+/*サイト更新の時に、バナーの写真が画面上に一瞬出ないようにするためのもの*/
+.slider {
+  visibility: hidden;
+  width: 600px;
+  max-width: 100%;
+}
+.slider.slick-initialized {
+  visibility: visible;
+}
+/*flexbox-エリア*/
+.area {
+  font-size: 20px;
+  text-align: center;
+}
+.f-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap:wrap;
+}
+.f-item01,.f-item02,.f-item03,.f-item04,.f-item05,　{
+  height: 150px;
+  width: 25%;
+  margin: 30px;
+  padding: 10px;
+  border-radius: 90px;
+  border: 2px solid #40352e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  background-color: #f9f1e6;
+}
+.f-item01 p,.f-item03 p,.f-item04 p {
+  text-align: center;
+}
+.f-container a {
+  color: #40352e;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+}
+/*エリアのボタン設定*/
+.f-item01::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #e7ddcd;
+  border-radius: 90px;
+  z-index: -1;
+  transition: .2s;
+}
+.f-item01:hover::before {
+  width: 100%;
+}
+.f-item02::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #e7ddcd;
+  border-radius: 90px;
+  z-index: -1;
+  transition: .2s;
+}
+.f-item02:hover::before {
+  width: 100%;
+}
+.f-item03::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #e7ddcd;
+  border-radius: 90px;
+  z-index: -1;
+  transition: .2s;
+}
+.f-item03:hover::before {
+  width: 100%;
+}
+.f-item04::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #e7ddcd;
+  border-radius: 90px;
+  z-index: -1;
+  transition: .2s;
+}
+.f-item04:hover::before {
+  width: 100%;
+}
+.f-item05::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #e7ddcd;
+  border-radius: 90px;
+  z-index: -1;
+  transition: .2s;
+}
+.f-item05:hover::before {
+  width: 100%;
+}
+/*flexbox-味*/
+.aji-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.aji-item {
+  transition: .2s;
+  display: inline-block;
+  position: relative;
+}
+.aji-item img {
+  width: 180px;
+  padding: 5px;
+  margin: 20px 20px 0px 20px;
+  border-radius: 70px;
+  display: block;
+}
+.aji-item-contents {
+  text-align: center;
+  margin: 0px 10px 10px 10px;
+  padding: 5px;
+}
+/*flexbox-味のボタンアクション*/
+.aji-item::after {
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  background-color: black;
+  top: 25px;
+  left: 25px;
+  border-radius: 70px;
+  z-index: -1;
+}
+.aji-item img:hover {
+  opacity: 0.5;
+  transition: 0.3s
+}
+.aji-item::before {
+  content: "Read More";
+  position: absolute;
+  top: 100px;
+  left: 65px;
+  color: #ffffff;
+  font-size: 20px;
+  font-family: "Palatino Linotype";
+  font-weight: bold;
+  opacity:0;
+}
+.aji-item:hover::before {
+  opacity: 1;
+  transition: 0.3s
+}
+
+/*ラーメン用語解説のボタンのhoverアクション*/
+.zukan {
+  text-align: center;
+}
+.dictionary {
+  display: inline-block;
+  width: 200px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 50px;
+  color: #FFFFFF;
+  background: rgb(79, 89, 131);
+  border-radius: 5px;
+  border: solid 2px rgb(79, 89, 131);
+  transition: all 0.3s ease-out;
+}
+.dictionary:hover {
+  color: rgb(79, 89, 131);
+  background: #FFFFFF;
+}
+
+
+/*共通(ボトムメニュー)*/
+.bottom-menu {
+  display: flex;
+  justify-content: center;
+  background: #503f2f;
+}
+.bottom-menu-contents {
+  margin: 0 50px;
+  padding: 20px 0 10px 0;
+}
+.bottom-menu-contents p {
+  color: #f6f5ed;
+  font-size: clamp(14px,1.5vw,15px);
+}
+.bottom-menu-contents a {
+  color: #f6f5ed;
+  text-decoration: none;
+}
+.bottom-menu-contents a:hover {
+  opacity: 0.5;
+}
+@media screen and (max-width: 992px) { /*スマホの場合はタテ並びにする*/
+  .bottom-menu {
+    display: block;
+  }
+  .bottom-menu-contents {
+  margin: 0 50px 0 50px;
+  padding: 20px 0 10px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+

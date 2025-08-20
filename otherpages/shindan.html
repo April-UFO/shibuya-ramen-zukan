@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>渋谷ラーメン大図鑑</title>
+	<!-- CSS -->
+	<link rel="stylesheet" href="./shindan.css">
+	<!-- フォント設定 -->
+	<link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho" rel="stylesheet">
+  </head>
+  <body> 
+    <!--共通(トップメニュー)-->
+    <h1 class = "toptitle"><a href = "../index.html">渋谷ラーメン大図鑑</a></h1>
+    <hr class = "hr1">
+	<br>
+	<div class = "ramen-icon">
+	  <img src = "./icon/shindan-icon.png">
+	</div>
+    <h2 class = "subtitle">ラーメン診断</h2>
+	<br>
+	<br>
+	<br>
+	<!--ラーメン診断ここから-->
+	<div class="flex-box">
+      <h1 class = "question" id="question">問１ 今のテンションは？</h1>
+	  <br>
+      <div class="options" id="options">
+        <button data-value="静かに癒されたい">静かに癒されたい</button>
+        <button data-value="ガツンと元気を出したい">ガツンと元気を出したい</button>
+        <button data-value="ちょっと冒険したい">ちょっと冒険したい</button>
+      </div>
+	  <!--結果の設定-->
+      <div id="result" class="hidden">
+        <h2 class = "resultresult" id="result-title"></h2>
+        <p class = "result-description" id="result-description"></p>
+        <!-- ラーメンボックスココから -->
+        <div class="flex">
+          <figure class="image">
+            <img src="./ramen-image/kamukura_ramen.jpg" />
+            <p>▲煮玉子ラーメン<br>1,000円</p>
+          </figure>
+          <div class="right">
+            <p class="title">📍どうとんぼり神座</p>
+            <p class="text">
+              大阪で大人気！シャキシャキで優しい甘みが特徴の白菜がたっぷり。
+              <br>卓上のニラとおろしにんにくで自分好みにカスタマイズ！
+            </p>
+            <p class="information">
+              アクセス：東京都渋谷区渋谷1-8-10
+              <br>　　　　　(青学から徒歩7分/渋谷駅から徒歩6分)
+              <br>営業時間：年中無休　11:00～23:30
+              <br>Link：<a href="https://kamukura.co.jp/">日本の味がする。KAMUKURA</a>
+            </p>
+          </div>
+        </div>
+        <br>
+      </div>
+      <!-- ラーメンボックスココまで -->
+	</div>
+    <!--リスタートボタン-->
+	<br>
+    <div class = "start-button">
+       <button id="restart-button">リセット</button>
+    </div>
+	<!--共通(ボトムメニュー)-->
+	<br>
+	<br>
+    <div class = "bottom-menu">
+	  <div class = "bottom-menu-contents">
+	    <p>■エリアから選ぶ
+		<br>ー<a href = "./area-pages/senta-gaipage.html">渋谷センター街</a>
+		<br>ー<a href = "./area-pages/dougenzakapage.html">道玄坂</a>
+		<br>ー<a href = "./area-pages/sakuraokapage.html">南平台・桜岡</a>
+		<br>ー<a href = "./area-pages/aoyamapage.html">青山・美竹通り</a>
+		<br>ー<a href = "./area-pages/omotesandopage.html">表参道</a></p>
+	  </div>
+	  <div class = "bottom-menu-contents">
+	    <p>■味から選ぶ
+		<br>ー<a href = "./shoyupage.html">醤油</a>
+		<br>ー<a href = "./misopage.html">味噌</a>
+		<br>ー<a href = "./tonkotsupage.html">豚骨</a>
+		<br>ー<a href = "./iepage.html">家系</a>
+		<br>ー<a href = "./shiopage.html">塩</a>
+		<br>ー<a href = "./tantanpage.html">担々麵</a>
+		<br>ー<a href = "./tsukemenpage.html">つけ麺</a>
+		<br>ー<a href = "./mazepage.html">油そば・混ぜそば</a>
+		</p>
+	  </div>
+	  <div class = "bottom-menu-contents">
+	    <p>■<a href = "./ranking.html">ラーメンランキング</a>
+		<br><br>■<a href = "./shindan.html">ラーメン診断</a>
+		<br><br>■<a href = "./kosupa.html">コスパ最強ラーメン特集</a>
+		<br><br>■<a href = "./writer.html">作成者Profile</a></p>
+	  </div>
+	</div>
+
+	
+	
+	
+	<script src="shindan.js"></script>
+  </body>
+</html>
