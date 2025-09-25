@@ -18,6 +18,24 @@ const ramenData = {
 	flavor: "つけ麺"
   },
   {
+    name: "背脂ラーメン チャッチャ亭",
+    image: "./ramen-image/chaccha_ramen.jpg", 
+	menu: "写真はネギつき(1,380円)",
+    price: "980円",
+    location: "渋谷区道玄坂2-25-5 島田ビル 1F",
+    date: "不定休　11:00～22:30",
+	flavor: "チャッチャ系"
+  },
+  {
+    name: "茂司",
+    image: "./ramen-image/shigeji_ramen.jpg", 
+	menu: "茂司ら～麺",
+    price: "980円",
+    location: "東京都港区南青山3-8-3",
+    date: "月～金・祝日　11:30～15:00<br>　　　　　土・日　定休日",
+	flavor: "魚介"
+  },
+  {
     name: "黄金の塩らぁ麺 ドゥエ イタリアン",
     image: "./ramen-image/due_ramen.jpg", 
 	menu: "写真は黄金の塩らぁ麺(1,080円)",
@@ -52,6 +70,15 @@ const ramenData = {
     location: "港区北青山3-5-40 PRYME CUBE表参道 1F",
     date: "年中無休　11:00～21:30",
 	flavor: "醤油"
+  },
+  {
+    name: "桜ん坊",
+    image: "./ramen-image/sakuranbo_ramen.jpg", 
+	menu: "写真はつけ麺(980円)",
+    price: "950円",
+    location: "渋谷区桜丘町16-8 1F",
+    date: "月～金　11:30～15:00/18:00～00:00<br>　　　　　土・日　11:30～00:00",
+	flavor: ""
   },
   {
     name: "渋谷かっちゃんラーメン",
@@ -178,6 +205,15 @@ const ramenData = {
     location: "渋谷区宇田川町27-1",
     date: "月～土　9:00～23:00<br>　　　　　日・祝日　9:00～22:30",
 	flavor: "豚骨"
+  },
+  {
+    name: "中華そば専門 田中そば店",
+    image: "./ramen-image/tanaka_ramen.jpg", 
+	menu: "写真は味玉入(1,050円)",
+    price: "900円",
+    location: "渋谷区宇田川町15-1 渋谷PARCO 7F",
+    date: "月～金　11:00～16:00/17:00～21:00<br>　　　　　土・日　11:00～21:00",
+	flavor: "中華そば"
   },
   {
     name: "ジカセイ メンショウ",

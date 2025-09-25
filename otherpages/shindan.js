@@ -62,7 +62,7 @@ const results = {
   "静かに癒されたい|麺|どっしり頼れるリーダー": {
     title: "根を張る安心感",
     description: "言葉は少ないけど、ただそこにいるだけで揺るぎない安心感がある。<br>そんなあなたにおすすめのラーメンは…「柑橘系つけ麺」！",
-	ramenImage: "./noimage-image/tsujita_ramen.jpg",
+	ramenImage: "./ramen-image/tsujita_ramen.jpg",
     ramenName: "濃厚つけ麺",
     ramenPrice: "1,100円",
     shopName: "つじ田",
