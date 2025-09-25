@@ -316,6 +316,14 @@ header {
   background: #FFFFFF;
 }
 
+/*広告*/
+.cm {
+  text-align: center;
+}
+.cm img {
+  width: 300px;
+}
+
 
 /*共通(ボトムメニュー)*/
 .bottom-menu {
